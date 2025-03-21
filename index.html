@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ribbon Tool UI Documentation</title>
+    <link rel="icon" type="image/ico" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            width: 100%;
+            max-width: 700px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4 p-4">
+        <h1 class="text-center mb-4">Ribbon Tool UI Documentation</h1>
+        <p>This documentation provides a detailed explanation of the Ribbon Tool UI, guiding both beginners and advanced users on how to utilize its features for rigging in Maya.</p>
+        
+        <div class="section">
+            <h2>1. Ribbon Type Selection</h2>
+            <img src="division1.png" alt="Ribbon Type Selection">
+            <p>The UI offers two radio button options:</p>
+        <ul>
+            <li><strong>Ribbon:</strong> Used when creating a ribbon for joint-based deformations, allowing for specific joint movements.</li>
+            <li><strong>Ribbon on Surface:</strong> Used for mesh deformations, such as facial expressions, fatty area jiggle, or localized deformations on the body.</li>
+        </ul>
+        <p>When using <strong>Ribbon on Surface</strong>, the system relies on <em>lo-fi</em> curves, requiring an inner and outer curve selection.</p>
+        </div>
+        
+        <div class="section">
+            <h2>2. Inner and Outer Curves</h2>
+            <img src="division2.png" alt="Inner and Outer Curves">
+            <p>The inner and outer curves define the structure of the ribbon. The user must select polygon edges, which are then converted into NURBS curves.</p>
+        </div>
+        
+        <div class="section">
+            <h2>3. Number of Follicles and Controllers</h2>
+            <img src="division3.png" alt="Follicles and Controllers">
+            <li><strong>Number of Follicles:</strong> Defined by a slider and line edit, follicles control deformation influences.</li>
+            <li><strong>Number of Controllers:</strong> Determines how many controllers will influence the ribbon.</li>
+        </div>
+        
+        <div class="section">
+            <h2>4. Controller Shape and Color</h2>
+            <img src="division4.png" alt="Controller Shape and Color">
+            <li><strong>Controller Shape:</strong> Choose from Circle, Square, or Triangle.</li>
+            <li><strong>Controller Color:</strong> Allows setting a visual indicator for controllers.</li>
+        </div>
+        
+        <div class="section">
+            <h2>5. Deformers</h2>
+            <img src="division5.png" alt="Deformers">
+            <p><li><strong>Sine:</strong> Adds sine wave deformation.</li>
+                <li><strong>Twist:</strong> Enables twisting effects.</li>
+                <li><strong>Jiggle:</strong> Useful for adding secondary motion.</li>
+                <li><strong>Stretch and Squash:</strong> Useful for adding Stretching deformatoins</li>
+                <li><strong>Wire:</strong> Enables adding drag motion.</li></p>
+        </div>
+        
+        <div class="section">
+            <h2>6. Apply, Create, and Close Buttons</h2>
+            <img src="division6.png" alt="Action Buttons">
+            <p>
+                <b>Apply:</b> Saves and applies the current settings.<br>
+                <b>Create:</b> Generates the Ribbon setup.<br>
+                <b>Close:</b> Closes the tool.
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2>7. Edit and Help Menu</h2>
+            <img src="division7.png" alt="Edit and Help Menu">
+            <p>
+                The <b>Edit Menu</b> allows users to <i>Save Settings</i> for preserving UI preferences and <i>Reset Settings</i> to revert to saved defaults.
+            </p>
+            <p>
+                The <b>Help Menu</b> provides access to the developer's documentation.
+            </p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
